@@ -95,6 +95,7 @@ hide: false
 
 
 ---
+class: text-center
 background: ./images/bg10.jpeg
 src: ./pages/99问答.md
 ---
