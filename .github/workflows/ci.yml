@@ -1,7 +1,7 @@
 name: CI
 
 on:
-  push: 
+  push:
     branches:
       - main
 
@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         node-version: [19.x]
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -37,8 +37,8 @@ jobs:
           cd $dist_path
           git config --global init.defaultBranch $deploy_branch
           git init
-          git config --global user.name ${user_name}
-          git config --global user.email ${user_email}
+          git config --global user.name "shenshi"
+          git config --global user.email "shenshi@shouqianba.com"
           git add -A
           git commit -m "auto deploy"
           git remote add origin ${remote_addr}
