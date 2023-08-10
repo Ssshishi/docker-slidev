@@ -42,6 +42,5 @@ jobs:
           git add -A
           git commit -m "auto deploy"
           git remote set-url origin https://${{token}}:x-oauth-basic@github.com/shenshi/docker-slidev.git
-          # git remote add origin https://${{secrets.GITHUB_TOKEN}}:@github.com/shenshi/docker-slidev.git
           git push origin HEAD:$deploy_branch --force
 
