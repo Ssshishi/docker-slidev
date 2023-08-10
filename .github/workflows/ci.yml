@@ -31,7 +31,7 @@ jobs:
           user_emain=`git log -1 --pretty=format:'%ae'`
           deploy_branch=gh-pages
           npm install -g pnpm@8.6.6
-          pnpm install
+          pnpm install --frozen-lockfile
           pnpm build
           cd dist
           git config --global init.defaultBranch $deploy_branch
