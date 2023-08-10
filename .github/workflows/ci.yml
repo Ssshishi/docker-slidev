@@ -34,6 +34,7 @@ jobs:
           npm install -g pnpm@8.6.6
           pnpm install --frozen-lockfile
           pnpm build
+          cp dist/index.html dist/404.html
           cd $dist_path
           git config --global init.defaultBranch $deploy_branch
           git init
