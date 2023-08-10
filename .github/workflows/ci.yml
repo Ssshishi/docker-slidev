@@ -41,6 +41,7 @@ jobs:
           git config --global user.email "shenshi@shouqianba.com"
           git add -A
           git commit -m "auto deploy"
-          git remote add origin https://${{secrets.GITHUB_TOKEN}}:x-oauth-basic@github.com/Ssshishi/$repo.git
+          remote_addr=`echo $remote_addr | awk -F'://' '{print $2}'`
+          git remote add origin https://shenshi:${{secrets.ACCESS_TOKEN}}@${remote_addr}
           git push origin HEAD:$deploy_branch --force
 
