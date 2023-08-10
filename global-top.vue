@@ -11,7 +11,7 @@ const num = computed(() => {
 <template>
   <div v-if="![1, 2, $slidev.nav.total + 1].includes($slidev.nav.currentPage)">
     <div class="top absolute top-0 right-0 p-2">
-      <Image class="w-20" src="./public/img/logo.png" />
+      <Image class="w-20" src="/logo.png" />
     </div>
     <div class="progress absolute top-0 left-0">
       <Progress :targetValue="num" />
