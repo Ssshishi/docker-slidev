@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Progress from './components/Progress.vue'
+import Progress from './components/progress.vue'
 import { computed } from 'vue'
 
 const num = computed(() => {
