@@ -3,7 +3,7 @@ name: CI
 on:
   push: 
     branches:
-      - mian
+      - main
 
 env:
   TZ: Asia/Shanghai
