@@ -39,8 +39,8 @@ jobs:
           git init
           git config user.name ${user_name}
           git config user.email ${user_email}
-          git add .
-          git commit -m "auto deploy"
+          git add -A
+          git commit -m "auto deploy, $commit_info"
           git remote add origin ${remote_addr}
           git push origin HEAD:$deploy_branch --force
 
